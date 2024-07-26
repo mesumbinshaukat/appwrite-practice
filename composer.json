@@ -1,0 +1,6 @@
+{
+    "require": {
+        "appwrite/appwrite": "11.0.1",
+        "vlucas/phpdotenv": "^5.6"
+    }
+}
