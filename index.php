@@ -4,8 +4,6 @@ require_once realpath(__DIR__ . '/vendor/autoload.php');
 $dotenv = Dotenv\Dotenv::createImmutable(realpath(__DIR__));
 $dotenv->load();
 
-
-
 use Appwrite\Client;
 use Appwrite\Services\Databases;
 use Appwrite\ID;
