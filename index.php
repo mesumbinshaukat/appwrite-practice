@@ -159,10 +159,12 @@ runAllTasks($databases);
                     url: "submit.php",
                     data: form.serialize(),
                     success: function(response) {
+                        console.log("Response: ", response);
                         try {
                             var result = JSON.parse(response);
                             console.log("Result: ", result);
                             if (result.success) {
+                                form[0].reset();
                                 alert("Success");
                                 // Optionally, refresh the list of todos
                                 fetchTodos();
